@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,7 +28,9 @@ export default function Home() {
         </p>
         <div className="flex gap-3 mt-2">
           <Button size="lg">Get started for free</Button>
-          <Button size="lg" variant="outline">See how it works</Button>
+          <Button size="lg" variant="outline" asChild>
+            <Link href="/how-it-works">See how it works</Link>
+          </Button>
         </div>
       </section>
 
